@@ -1,12 +1,30 @@
-import { top, bottom } from "./page.load";
+import { top, bottom } from "./components/page.load";
+import menuTable from "./components/menu";
 import "./style/main.css";
 
 // gets rid of margin and padding on body
 const body = document.querySelector("body");
 body.classList.add("body");
 
-// load header on load of page
-top();
+// load the menu page
+export function loadMenu(div, contain) {
+  div.addEventListener("click", () => {
+    contain.innerHTML = "";
+    top();
+    menuTable();
+    bottom();
+  });
+}
+
+// load home page
+export function loadHome(div, contain) {
+  div.addEventListener("click", () => {
+    contain.innerHTML = "";
+    top();
+    mainHome();
+    bottom();
+  });
+}
 
 //Home content
 function mainHome() {
@@ -15,27 +33,19 @@ function mainHome() {
   // Create Home menu div
   const mainInfoTop = document.createElement("div");
   // create content for mainInfoTop
-  const mainHeading = document.createElement("h1");
-  const secondHeading = document.createElement("h3");
-  const mainBtn = document.createElement("button");
-  // assign values
-  mainHeading.innerText = "Welcome To Cafe Restaurant";
-  secondHeading.innerText = "Where fast and quality meet";
-  mainBtn.innerText = "Order Now!";
-  // assign classes
-  mainBtn.classList.add("main-btn");
+  mainInfoTop.innerHTML = `<h1>Welcome To Cafe Restaurant</h1>
+  <h3>Where fast and quality meet</h3>
+  <button class="main-btn">Order Now!</button>`;
+  // Get the button element and add an event listener to it
+  const mainBtn = mainInfoTop.querySelector(".main-btn");
+  loadMenu(mainBtn, container);
+  // add class to mainInfoTop
   mainInfoTop.classList.add("main-info");
-  // append to mainInfoTop
-  mainInfoTop.appendChild(mainHeading);
-  mainInfoTop.appendChild(secondHeading);
-  mainInfoTop.appendChild(mainBtn);
-  // append to container
   container.appendChild(mainInfoTop);
   // add eventListener
-  mainBtn.addEventListener("click", () => {
-    container.innerHTML = "";
-    top();
-  });
 }
-mainHome();
 
+// order of how the page will load
+top();
+mainHome();
+bottom();

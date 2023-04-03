@@ -1,5 +1,6 @@
-// header on all pages
+import { loadMenu, loadHome } from "../index";
 
+// header on all pages
 export function top() {
   // get the container
   const contain = document.querySelector(".container");
@@ -28,10 +29,25 @@ export function top() {
   header.classList.add("header");
   // adding to main container
   contain.appendChild(header);
+
+  //add event handler for Menu
+  loadMenu(divTwo, contain);
+  loadHome(divOne, contain);
 }
 
-// footer on all pages 
-
+// footer on all pages
 export function bottom() {
-  console.log("hello")
+  // get the container
+  const contain = document.querySelector(".container");
+  // create the footer
+  const footer = document.createElement("footer");
+  // create elements
+  const footHeading = document.createElement("h3");
+  // assign values
+  footHeading.innerHTML = "Developed by Kamil&#129323;";
+  // append element to parent
+  footer.appendChild(footHeading);
+  // add class
+  footer.classList.add("footer");
+  contain.appendChild(footer);
 }
