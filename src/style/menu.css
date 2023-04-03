@@ -1,20 +1,22 @@
 :root {
   --main-clr: #765452;
   --second-clr: #d5a569;
-  --third-clr: brown;
-  --fourth-clr: rgb(50, 200, 50);
+  --third-clr: #112f39;
+  --fourth-clr: #c9bb90;
 }
 
 .menu {
   margin: auto;
   background-color: var(--main-clr);
   border-radius: 10px;
+  opacity: 0.95;
 }
 
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  row-gap: 15px;
   padding: 15px;
 }
 
@@ -26,4 +28,9 @@
 .menu-price {
   text-align: right;
   font-size: 1.3rem;
+}
+
+.Menu {
+  background-color: var(--third-clr);
+  color: var(--second-clr) !important;
 }

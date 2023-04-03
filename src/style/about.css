@@ -1,0 +1,24 @@
+:root {
+  --main-clr: #765452;
+  --second-clr: #d5a569;
+  --third-clr: #112f39;
+  --fourth-clr: #c9bb90;
+  --fifth-clr:#8a7c79;
+}
+
+.main-frame {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+  background-color: var(--fifth-clr);
+  padding: 1rem;
+  border-radius: 10px;
+  opacity: 0.95;
+}
+
+.about-contain {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 0.9rem;
+}

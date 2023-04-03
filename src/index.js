@@ -1,30 +1,11 @@
 import { top, bottom } from "./components/page.load";
 import menuTable from "./components/menu";
+import aboutUs from "./components/about";
 import "./style/main.css";
 
 // gets rid of margin and padding on body
 const body = document.querySelector("body");
 body.classList.add("body");
-
-// load the menu page
-export function loadMenu(div, contain) {
-  div.addEventListener("click", () => {
-    contain.innerHTML = "";
-    top();
-    menuTable();
-    bottom();
-  });
-}
-
-// load home page
-export function loadHome(div, contain) {
-  div.addEventListener("click", () => {
-    contain.innerHTML = "";
-    top();
-    mainHome();
-    bottom();
-  });
-}
 
 //Home content
 function mainHome() {
@@ -49,3 +30,41 @@ function mainHome() {
 top();
 mainHome();
 bottom();
+
+// loaders functions
+// load the menu page
+export function loadMenu(div, contain) {
+  div.addEventListener("click", () => {
+    contain.innerHTML = "";
+    top();
+    menuTable();
+    bottom();
+  });
+}
+
+// load home page
+export function loadHome(div, contain) {
+  div.addEventListener("click", () => {
+    contain.innerHTML = "";
+    top();
+    mainHome();
+    bottom();
+  });
+}
+// load about page
+export function loadAbout(div, contain) {
+  div.addEventListener("click", () => {
+    contain.innerHTML = "";
+    top();
+    aboutUs();
+    bottom();
+  });
+}
+// load contact page
+export function loadContact(div, contain) {
+  div.addEventListener("click", () => {
+    contain.innerHTML = "";
+    top();
+    bottom();
+  });
+}

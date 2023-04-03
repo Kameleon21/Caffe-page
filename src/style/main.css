@@ -1,13 +1,20 @@
 :root {
   --main-clr: #765452;
   --second-clr: #d5a569;
-  --third-clr: brown;
-  --fourth-clr: rgb(50, 200, 50);
+  --third-clr: #112f39;
+  --fourth-clr: #c9bb90;
 }
 
 * {
-  padding: 0rem;
-  margin: 0rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url(../img/michal-parzuchowski-ItaV89TNkks-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* main container style */
@@ -15,10 +22,10 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-image: url(../img/michal-parzuchowski-ItaV89TNkks-unsplash.jpg);
+  /* background-image: url(../img/michal-parzuchowski-ItaV89TNkks-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 /* top header styling */
@@ -28,7 +35,6 @@
   align-items: center;
   gap: 4rem;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.8) ;
 }
 
 /* header div's styling */
@@ -40,6 +46,11 @@
   padding: 0.5rem;
   border-radius: 10px;
 }
+
+/* .home {
+  background-color: var(--third-clr);
+  color: var(--second-clr) !important;
+} */
 
 .logo {
   background-image: url(../img/nico-smit-2M6ewSjbo60-unsplash.jpg);
@@ -65,6 +76,7 @@
   padding: 0.7rem 1rem ;
   border-color: #000;
   background-color: var(--fourth-clr);
+  border-color: var(--fourth-clr);
   font-weight: 550;
   border-radius: 10px;
 }
@@ -73,7 +85,7 @@
 .footer {
   margin-top: auto;
   text-align: center;
-  background-color: lightgray;
+  background-color: var(--third-clr);
   padding: 1rem;
   opacity: 0.7;
 }

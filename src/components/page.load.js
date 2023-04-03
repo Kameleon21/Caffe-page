@@ -1,4 +1,4 @@
-import { loadMenu, loadHome } from "../index";
+import { loadMenu, loadHome, loadAbout, loadContact } from "../index";
 
 // header on all pages
 export function top() {
@@ -27,12 +27,15 @@ export function top() {
   header.appendChild(divFive);
   //adding styles to header
   header.classList.add("header");
+  divOne.classList.add("home");
+  divTwo.classList.add("Menu");
   // adding to main container
   contain.appendChild(header);
-
-  //add event handler for Menu
+  //add event handlers
   loadMenu(divTwo, contain);
   loadHome(divOne, contain);
+  loadAbout(divFour, contain);
+  loadContact(divFive, contain);
 }
 
 // footer on all pages
