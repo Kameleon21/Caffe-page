@@ -11,31 +11,30 @@ export function top() {
   const divTwo = document.createElement("div");
   const divThree = document.createElement("div");
   const divFour = document.createElement("div");
-  const divFive = document.createElement("div");
   // assign values the three links
   divOne.innerText = "Home";
   divTwo.innerText = "Menu";
-  divFour.innerText = "About";
-  divFive.innerText = "Contact";
+  divThree.innerText = "About";
+  divFour.innerText = "Contact";
   //assign class to divThree for img
-  divThree.classList.add("logo");
   // adding the four div's to header
   header.appendChild(divOne);
   header.appendChild(divTwo);
   header.appendChild(divThree);
   header.appendChild(divFour);
-  header.appendChild(divFive);
   //adding styles to header
   header.classList.add("header");
   divOne.classList.add("home");
   divTwo.classList.add("Menu");
+  divThree.classList.add("about");
+  divFour.classList.add("Contact");
   // adding to main container
   contain.appendChild(header);
   //add event handlers
   loadMenu(divTwo, contain);
   loadHome(divOne, contain);
-  loadAbout(divFour, contain);
-  loadContact(divFive, contain);
+  loadAbout(divThree, contain);
+  loadContact(divFour, contain);
 }
 
 // footer on all pages

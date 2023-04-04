@@ -9,7 +9,7 @@ export default function aboutUs() {
   // give values
   about.innerHTML = `<div class="about-contain">
   <h2>Quick Introduction</h2>
-  <p>At Cafe, we believe in more than just serving you a cup of coffee or a delectable treat. Our mission is to create a warm, inviting, and memorable experience that celebrates the simple joys of life. Since our humble beginnings in 2000, we've been dedicated to crafting the finest beverages, mouthwatering pastries, and savory bites, all while embracing our local community's unique spirit.</p>
+  <p>At Cafe, we believe in more than just serving you a cup of coffee or a delectable treat. Our mission is to create a warm, inviting, and memorable experience that celebrates the simple joys of life. Since our humble beginnings in the early 2000's, we've been dedicated to crafting the finest beverages, mouthwatering pastries, and savory bites, all while embracing our local community's unique spirit.</p>
 
   <p>Our story began with a passion for creating a space where people could gather, connect, and unwind over a delicious meal or a comforting cup of coffee. We take pride in our carefully curated menu, which features the freshest, locally-sourced ingredients and a touch of our culinary team's creativity. Our diverse selection is designed to satisfy every palate, from our signature [Cafe Specialty] to the heartwarming, homemade soups, artisanal sandwiches, and sinfully delightful pastries.</p>
 

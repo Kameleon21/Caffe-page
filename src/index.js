@@ -1,7 +1,7 @@
 import { top, bottom } from "./components/page.load";
 import menuTable from "./components/menu";
 import aboutUs from "./components/about";
-import contactUs from './components/contact';
+import contactUs from "./components/contact";
 import "./style/main.css";
 
 // gets rid of margin and padding on body
@@ -17,7 +17,7 @@ function mainHome() {
   // create content for mainInfoTop
   mainInfoTop.innerHTML = `<h1>Welcome To Cafe Restaurant</h1>
   <h3>Where fast and quality meet</h3>
-  <button class="main-btn">Order Now!</button>`;
+  <button class="main-btn">Take A Look</button>`;
   // Get the button element and add an event listener to it
   const mainBtn = mainInfoTop.querySelector(".main-btn");
   loadMenu(mainBtn, container);
@@ -40,6 +40,8 @@ export function loadMenu(div, contain) {
     top();
     menuTable();
     bottom();
+    const menu = document.querySelector(".Menu");
+    menu.classList.add("color");
   });
 }
 
@@ -50,6 +52,8 @@ export function loadHome(div, contain) {
     top();
     mainHome();
     bottom();
+    const home = document.querySelector(".home");
+    home.classList.add("color");
   });
 }
 // load about page
@@ -59,6 +63,8 @@ export function loadAbout(div, contain) {
     top();
     aboutUs();
     bottom();
+    const about = document.querySelector(".about");
+    about.classList.add("color");
   });
 }
 // load contact page
@@ -68,5 +74,7 @@ export function loadContact(div, contain) {
     top();
     contactUs();
     bottom();
+    const contact = document.querySelector(".Contact");
+    contact.classList.add("color");
   });
 }

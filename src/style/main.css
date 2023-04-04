@@ -22,7 +22,7 @@ body {
 /* main container style */
 .container {
   display: grid;
-  grid-template-rows: 1fr 5fr 1fr ;
+  grid-template-rows: 1fr 5fr 1fr;
   min-height: 100vh;
 }
 
@@ -45,24 +45,14 @@ body {
   border-radius: 10px;
 }
 
-
-.logo {
-  background-image: url(../img/nico-smit-2M6ewSjbo60-unsplash.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 5rem;
-  height: 3rem;
-}
-
-/* main content */ 
+/* main content */
 
 .main-info {
   place-self: center;
   text-align: center;
   display: grid;
   align-items: center;
-  grid-template-rows: repeat(3,1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
   margin: 0 auto;
   font-size: 1.5rem;
@@ -70,7 +60,7 @@ body {
 }
 
 .main-btn {
-  padding: 0.7rem 1rem ;
+  padding: 0.7rem 1rem;
   border-color: #000;
   background-color: var(--fourth-clr);
   border-color: var(--fourth-clr);
@@ -86,12 +76,11 @@ body {
   border-color: var(--main-clr);
 }
 
-
 /* footer style */
 .footer {
   background-color: var(--third-clr);
   min-height: 170px;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 /* footer heading */
@@ -112,4 +101,7 @@ a {
   text-decoration: none;
 }
 
-
+.color {
+  background-color: var(--third-clr);
+  color: var(--second-clr) !important;
+}

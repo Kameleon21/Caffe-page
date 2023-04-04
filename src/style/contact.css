@@ -5,6 +5,10 @@
   --fourth-clr: #c9bb90;
 }
 
+.contact {
+  margin-top: 5rem;
+}
+
 .contact-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -14,22 +18,29 @@
 .contact-heading {
   grid-column: 1 / span 3;
   place-self: center;
+  margin-bottom: 2rem;
 }
 
 .right-contact {
   place-self: center;
   grid-area: 2/2/3/2;
-  background-color: var(--main-clr);
+  background-color: var(--second-clr);
   width: 400px;
   padding: 1rem;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .left-contact {
   place-self: center;
   grid-area: 2/2/2/1;
-  background-color: var(--main-clr);
+  background-color: var(--second-clr);
   width: 400px;
   padding: 1rem;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
