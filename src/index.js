@@ -1,6 +1,7 @@
 import { top, bottom } from "./components/page.load";
 import menuTable from "./components/menu";
 import aboutUs from "./components/about";
+import contactUs from './components/contact';
 import "./style/main.css";
 
 // gets rid of margin and padding on body
@@ -65,6 +66,7 @@ export function loadContact(div, contain) {
   div.addEventListener("click", () => {
     contain.innerHTML = "";
     top();
+    contactUs();
     bottom();
   });
 }

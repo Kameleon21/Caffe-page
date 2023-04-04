@@ -80,7 +80,7 @@ body {
 }
 
 .main-btn:hover {
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: var(--main-clr);
   color: var(--fourth-clr);
   border-color: var(--main-clr);
