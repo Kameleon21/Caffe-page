@@ -9,11 +9,11 @@ export default function aboutUs() {
   // give values
   about.innerHTML = `<div class="about-contain">
   <h2>Quick Introduction</h2>
-  <p>At Cafe, we believe in more than just serving you a cup of coffee or a delectable treat. Our mission is to create a warm, inviting, and memorable experience that celebrates the simple joys of life. Since our humble beginnings in [Year Established], we've been dedicated to crafting the finest beverages, mouthwatering pastries, and savory bites, all while embracing our local community's unique spirit.</p>
+  <p>At Cafe, we believe in more than just serving you a cup of coffee or a delectable treat. Our mission is to create a warm, inviting, and memorable experience that celebrates the simple joys of life. Since our humble beginnings in 2000, we've been dedicated to crafting the finest beverages, mouthwatering pastries, and savory bites, all while embracing our local community's unique spirit.</p>
 
   <p>Our story began with a passion for creating a space where people could gather, connect, and unwind over a delicious meal or a comforting cup of coffee. We take pride in our carefully curated menu, which features the freshest, locally-sourced ingredients and a touch of our culinary team's creativity. Our diverse selection is designed to satisfy every palate, from our signature [Cafe Specialty] to the heartwarming, homemade soups, artisanal sandwiches, and sinfully delightful pastries.</p>
 
-  <p>At [Cafe Name], we are more than just a cafe; we are a family. Our team of skilled baristas, talented chefs, and attentive staff are the backbone of our success, and their commitment to providing exceptional service is what sets us apart. We believe in fostering a culture that values personal growth, creativity, and collaboration, ensuring that we continue to be a beacon of excellence for our patrons.</p>
+  <p>At Cafe, we are more than just a cafe; we are a family. Our team of skilled baristas, talented chefs, and attentive staff are the backbone of our success, and their commitment to providing exceptional service is what sets us apart. We believe in fostering a culture that values personal growth, creativity, and collaboration, ensuring that we continue to be a beacon of excellence for our patrons.</p>
 
   <p>Community is at the heart of everything we do. We are proud to support local artists, farmers, and suppliers who share our vision for a sustainable, vibrant, and thriving community. By hosting events, fundraisers, and showcases, we aim to be a hub for creative expression and a platform for meaningful connections.</p>
   

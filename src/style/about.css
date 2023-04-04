@@ -7,9 +7,10 @@
 }
 
 .main-frame {
-  margin: auto;
+  place-self: center;
+  position: relative;
+  bottom: 3rem;
   width: 600px;
-  text-align: center;
   background-color: var(--fifth-clr);
   padding: 1rem;
   border-radius: 10px;
@@ -21,4 +22,8 @@
   flex-direction: column;
   gap: 2rem;
   font-size: 0.9rem;
+} 
+
+.about-contain h2 {
+  text-align: center;
 }

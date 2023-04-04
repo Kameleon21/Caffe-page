@@ -15,17 +15,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 /* main container style */
 .container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  /* background-image: url(../img/michal-parzuchowski-ItaV89TNkks-unsplash.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr ;
+  min-height: 100vh;
 }
 
 /* top header styling */
@@ -47,10 +45,6 @@ body {
   border-radius: 10px;
 }
 
-/* .home {
-  background-color: var(--third-clr);
-  color: var(--second-clr) !important;
-} */
 
 .logo {
   background-image: url(../img/nico-smit-2M6ewSjbo60-unsplash.jpg);
@@ -64,12 +58,15 @@ body {
 /* main content */ 
 
 .main-info {
-  margin-top: 7rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2.5rem;
+  place-self: center;
+  text-align: center;
+  display: grid;
   align-items: center;
+  grid-template-rows: repeat(3,1fr);
+  gap: 1rem;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  margin-bottom: 20rem;
 }
 
 .main-btn {
@@ -78,19 +75,41 @@ body {
   background-color: var(--fourth-clr);
   border-color: var(--fourth-clr);
   font-weight: 550;
-  border-radius: 10px;
+  width: 250px;
+  place-self: center;
 }
+
+.main-btn:hover {
+  border-radius: 10px;
+  background-color: var(--main-clr);
+  color: var(--fourth-clr);
+  border-color: var(--main-clr);
+}
+
 
 /* footer style */
 .footer {
-  margin-top: auto;
-  text-align: center;
   background-color: var(--third-clr);
-  padding: 1rem;
-  opacity: 0.7;
+  min-height: 170px;
+  font-size: .85rem;
 }
 
 /* footer heading */
-.footer h3 {
-  padding: 1rem;
+.foot-contain {
+  display: flex;
+  justify-content: center;
+  gap: 30rem;
+  padding: 10px;
 }
+
+.footer h5 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+

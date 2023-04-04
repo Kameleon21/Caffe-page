@@ -44,13 +44,28 @@ export function bottom() {
   const contain = document.querySelector(".container");
   // create the footer
   const footer = document.createElement("footer");
-  // create elements
-  const footHeading = document.createElement("h3");
   // assign values
-  footHeading.innerHTML = "Developed by Kamil&#129323;";
-  // append element to parent
-  footer.appendChild(footHeading);
+  footer.innerHTML = `<div class="foot-contain">
+  <div class="social">
+  <h4>Connect With Us On Socials</h4>
+  <p>Instagram: @Cafe123</p>
+  <p>Twitter: @Cafe123</p>
+  <p>Facebook: @Cafe123</p>
+  </div>
+  <div class="open-hrs">
+  <h4>Opening Hours</h4>
+  <p>Monday: 9am - 6pm</p>
+  <p>Tuesday: 9am - 6pm</p>
+  <p>Wednesday: 9am - 6pm</p>
+  <p>Thursday: 9am - 6pm</p>
+  <p>Friday: 9am - 6pm</p>
+  <p>Saturday: 9am - 6pm</p>
+  <p>Sunday: 9am - 6pm</p>
+  </div>
+  </div>
+  <h5>Developed by <a href="https://github.com/Kameleon21" target="_blank">Kamil</a> &#129323;</h5>`;
   // add class
   footer.classList.add("footer");
+  // append element to parent
   contain.appendChild(footer);
 }
