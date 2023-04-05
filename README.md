@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a simple web page project for a cafe. The project was built using webpack and includes HTML, CSS, and JavaScript files.
+This is a simple website for a Cafe, here I was learning to use Webpack and break my projects into modules, which is good long-term with cond maintainability and stability.
 
 ## Technology Used
 
@@ -12,6 +12,10 @@ This is a simple web page project for a cafe. The project was built using webpac
 - CSS
 - JavaScript
 - Webpack
+
+## Live Demo
+
+https://kameleon21.github.io/Caffe-page/
 
 ## Installation
 
