@@ -16,7 +16,7 @@ function mainHome() {
   const mainInfoTop = document.createElement("div");
   // create content for mainInfoTop
   mainInfoTop.innerHTML = `<h1>Welcome To Cafe Restaurant</h1>
-  <h3>Where fast and quality meet</h3>
+  <h3>Where Fast And Quality Meet</h3>
   <button class="main-btn">Take A Look</button>`;
   // Get the button element and add an event listener to it
   const mainBtn = mainInfoTop.querySelector(".main-btn");
@@ -31,6 +31,8 @@ function mainHome() {
 top();
 mainHome();
 bottom();
+const home1 = document.querySelector(".home");
+home1.classList.add("color");
 
 // loaders functions
 // load the menu page

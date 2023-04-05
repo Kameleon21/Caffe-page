@@ -27,3 +27,14 @@
 .about-contain h2 {
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  .main-frame {
+    width: 400px;
+    bottom: 1.5rem;
+  }
+
+  .about-contain {
+    font-size: 0.8rem;
+  }
+}

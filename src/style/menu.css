@@ -30,4 +30,23 @@
   font-size: 1.3rem;
 }
 
+@media screen and (max-width: 600px) {
+  .menu {
+    width: 450px;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+  }
 
+  .menu-grid {
+    gap: 7px;
+    row-gap: 10px;
+  }
+
+  .menu-item {
+    font-size: 1.2rem;
+  }
+
+  .menu-price {
+    font-size: 1.1rem;
+  }
+}

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
 :root {
   --main-clr: #765452;
   --second-clr: #d5a569;
@@ -17,6 +19,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
+  font-family: "Lora", serif;
 }
 
 /* main container style */
@@ -104,4 +107,72 @@ a {
 .color {
   background-color: var(--third-clr);
   color: var(--second-clr) !important;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.open-hrs {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(../img/michal-parzuchowski-ItaV89TNkks-unsplash.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+
+  .container {
+    grid-template-rows: 1fr 3fr 1fr;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: start;
+    gap: 0rem;
+    padding: 0rem;
+    justify-content: start;
+  }
+
+  .header div {
+    min-width: 600px;
+    max-width: 100vw;
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    min-height: 140px;
+    font-size: 0.65rem;
+  }
+
+  .foot-contain {
+    gap: 20rem;
+    padding: 8px;
+  }
+
+  .footer h5 {
+    margin-top: 3rem;
+    padding: 0px;
+  }
+
+  .main-info {
+    font-size: 1.2rem;
+    margin-bottom: 8rem;
+  }
+
+  a,
+  h5 {
+    font-size: 0.65rem;
+  }
 }

@@ -44,3 +44,27 @@
   flex-direction: column;
   gap: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  .contact {
+    margin-top: 2rem;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-contact {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .left-contact {
+    font-size: 1rem;
+  }
+
+  .footer h5 {
+  }
+}

@@ -59,7 +59,7 @@ export function bottom() {
   <p>Thursday: 9am - 6pm</p>
   <p>Friday: 9am - 6pm</p>
   <p>Saturday: 9am - 6pm</p>
-  <p>Sunday: 9am - 6pm</p>
+  <p>Sunday: Closed</p>
   </div>
   </div>
   <h5>Developed by <a href="https://github.com/Kameleon21" target="_blank">Kamil</a> &#129323;</h5>`;
