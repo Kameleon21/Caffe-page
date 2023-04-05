@@ -31,7 +31,7 @@ To run the project on your local machine, you can use the following command:
 
 ```bash
 npm run start
-```bash
+```
 
 his will start the webpack development server and open the project in your default browser.
 
