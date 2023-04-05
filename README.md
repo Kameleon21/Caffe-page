@@ -1,6 +1,6 @@
 # Cafe Page
 
-![Cafe Page](https://user-images.githubusercontent.com/INSERT_IMAGE_URL)
+![banner](https://user-images.githubusercontent.com/92760571/230032920-b2f4af22-c204-40c3-bea9-77555eb514e8.png)
 
 ## Description
 
