@@ -17,15 +17,21 @@ This is a simple web page project for a cafe. The project was built using webpac
 
 To install this project, you need to clone this repository to your local machine. You can do this by running the following command:
 
+```bash
 git clone https://github.com/Kameleon21/Caffe-page.git
+```
 
 Once you have cloned the repository, you need to install the project dependencies. You can do this by running the following command:
 
+```bash
 npm install
+```
 
 To run the project on your local machine, you can use the following command:
 
+```bash
 npm run start
+```bash
 
 his will start the webpack development server and open the project in your default browser.
 
@@ -51,7 +57,3 @@ This project was created by [Kameleon21](https://github.com/Kameleon21). The fol
 
 Image Credits:
  - Michal Parzuchowski 
-
-## License
-
-This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for more information.
