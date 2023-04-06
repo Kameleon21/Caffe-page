@@ -46,6 +46,11 @@ body {
   border: solid 1px var(--main-clr);
   padding: 0.5rem;
   border-radius: 10px;
+  transition: 5ms;
+}
+
+.header div:hover {
+  transform: scale(1.2);
 }
 
 /* main content */
